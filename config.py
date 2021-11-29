@@ -10,5 +10,5 @@ class BaseConfig(object):
     SQLALCHEMY_ECHO = True
     JWT_TOKEN_LOCATION = ['headers']
     JWT_SECRET_KEY = "super-secret"  # Change this!
-    JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=1)
-    JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
+    JWT_ACCESS_TOKEN_EXPIRES = timedelta(seconds=20)
+    JWT_REFRESH_TOKEN_EXPIRES = timedelta(hours=1)
